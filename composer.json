@@ -1,0 +1,19 @@
+{
+    "name": "jonathan/app-salon_php_mvc_js_sass",
+    "description": "Proyecto AppSalon PHP 8",
+    "type": "porject",
+    "autoload": {
+        "psr-4": {
+            "MVC\\": "./",
+            "Controller\\": "./controllers/",
+            "Model\\": "./models/"
+        }
+    },
+    "authors": [
+        {
+            "name": "JotaErrE01",
+            "email": "jruiz.967@gmail.com"
+        }
+    ],
+    "require": {}
+}
