@@ -1,0 +1,27 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenido-resumen{
+    p{
+        border-bottom: 1px solid v.$gris;
+        margin-bottom: 1rem;
+    }
+
+    span{
+        color: v.$azul;
+        font-size: 2.4rem;
+        font-weight: v.$bold;
+    }
+
+    .servicios-resumen{
+        text-transform: capitalize;
+    }
+
+    .fecha-resumen{
+        text-transform: capitalize;
+    }
+
+    .precio-resumen{
+        font-weight: v.$bold;
+    }
+}

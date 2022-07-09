@@ -1,0 +1,28 @@
+@use 'base/variables' as v;
+
+
+.citas {
+    list-style: none;
+    padding: 0;
+    li{
+        padding: 1rem;
+        border-top: 1px solid v.$blanco;
+
+        p{
+            color: v.$azul;
+            font-weight: v.$bold;
+        }
+
+        span,
+        .servicio{
+            color: v.$blanco;
+            font-weight: v.$regular;
+        }
+    }
+
+    .capitalize{
+        text-transform: capitalize;
+    }
+}
+
+

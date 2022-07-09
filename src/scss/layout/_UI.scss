@@ -1,0 +1,73 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenedor-app{
+    @include m.tablet{
+        @include m.grid( 2, 0 );
+        min-height: 100vh;
+    }
+
+    .imagen{
+        height: 15rem;
+        background-image: url('../img/1.webp');
+        background-size: cover;
+        background-position: center;
+
+        @include m.tablet{
+            height: 100%;
+        }
+    }
+
+    .app{
+        margin: 0 auto;
+        padding: 3rem 0;
+        width: 95%;
+        overflow: auto;
+    }
+}
+
+.contenedor-titulo{
+    text-align: center;
+    
+    h1{
+        display: inline;
+    }
+
+    .enlace-admin{
+        display: flex;
+        justify-content: end;
+        font-size: 3rem;
+        color: white;
+        margin-right: 2rem;
+    }
+
+}
+
+.barra{
+    margin: v.$separacion 0;
+
+    @include m.tablet{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .boton{
+        @include m.boton(v.$negro, v.$blanco);
+        margin: 0;
+    }
+}
+
+.barra-servicios{
+    margin-bottom: calc(v.$separacion / 2);
+
+    @include m.tablet{
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+
+    .boton{
+        margin: 0 0 1rem 0;
+    }
+}

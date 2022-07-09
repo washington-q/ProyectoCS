@@ -1,0 +1,28 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.alerta{
+    color: v.$blanco;
+    display: block;
+    font-weight: v.$bold;
+    margin-bottom: 2rem;
+    padding: calc(v.$separacion / 15);
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    
+    &.error{
+        background-color: v.$rojo;
+        border-color: v.$rojo;
+    }
+
+    &.exito{
+        background-color: v.$verde;
+        border-color: v.$verde;
+    }
+
+    p{
+        border: none;
+        font-size: 1.5rem;
+    }
+}
